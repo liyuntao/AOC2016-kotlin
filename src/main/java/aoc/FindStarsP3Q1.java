@@ -1,3 +1,5 @@
+package aoc;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -9,22 +11,9 @@ import java.util.List;
 
 public class FindStarsP3Q1 {
 
-    int triCount = 0;
+    private int triCount = 0;
 
-    public static void main(String[] args) throws IOException {
-        FindStarsP3Q1 obj = new FindStarsP3Q1();
-
-        File file = new File("./inputs/day03");
-        BufferedReader in = new BufferedReader(new FileReader(file));
-        String line;
-        while ((line = in.readLine()) != null) {
-            obj.parseInput(line);
-        }
-
-        obj.printRes();
-    }
-
-    void parseInput(String inputs) {
+    private void parseInput(String inputs) {
         String[] input = inputs.split("\\s+");
         List<Integer> lst = new ArrayList<>(3);
         for (String s : input) {
@@ -39,4 +28,16 @@ public class FindStarsP3Q1 {
         System.out.println(triCount);
     }
 
+    public static void main(String[] args) throws IOException {
+        FindStarsP3Q1 obj = new FindStarsP3Q1();
+
+        File file = new File("./inputs/day03");
+        BufferedReader in = new BufferedReader(new FileReader(file));
+        String line;
+        while ((line = in.readLine()) != null) {
+            obj.parseInput(line);
+        }
+
+        obj.printRes();
+    }
 }

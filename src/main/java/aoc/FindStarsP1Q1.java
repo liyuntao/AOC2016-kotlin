@@ -1,6 +1,8 @@
+package aoc;
+
 import java.util.Arrays;
 
-import static com.gf.cheetah.test.Direction.*;
+import static aoc.Direction.*;
 
 enum Direction {
     UP, DOWN, LEFT, RIGHT

@@ -11,7 +11,7 @@
     <properties>
         <kotlin.version>1.0.6</kotlin.version>
         <junit.version>4.12</junit.version>
-        <main.class>FindStarsP3Q1</main.class>
+        <main.class>aoc.FindStarsP3Q1</main.class>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 

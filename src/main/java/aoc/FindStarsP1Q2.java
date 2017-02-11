@@ -1,7 +1,9 @@
+package aoc;
+
 import java.awt.geom.Line2D;
 import java.util.ArrayList;
 
-import static com.gf.cheetah.test.Direction.*;
+import static aoc.Direction.*;
 
 class Coordinate {
     final int x;
